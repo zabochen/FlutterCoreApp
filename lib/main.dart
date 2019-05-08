@@ -1,33 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_core_app/button/raised_button.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: MainApp(),
+    home: MyRaisedButton(),
   ));
 }
 
-class MainApp extends StatefulWidget {
-  @override
-  _State createState() => _State();
-}
-
-class _State extends State<MainApp> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Flutter Core App"),
-      ),
-      body: Container(
-        padding: EdgeInsets.all(32.0),
-        child: Center(
-          child: Column(
-            children: <Widget>[
-              Text("Hello Flutter"),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
